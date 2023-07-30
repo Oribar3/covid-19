@@ -1,0 +1,25 @@
+
+.header-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999;
+    font-family: 'Nerko One', cursive;
+    font-family: 'Rubik', sans-serif;
+    direction: rtl;
+
+}
+.logo-container{
+    flex: auto 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media screen and (max-width: 790px)
+{
+.header-wrapper{
+    flex: 0 0 250px;
+    flex-basis: 100%;
+}
+}

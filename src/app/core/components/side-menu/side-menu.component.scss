@@ -1,0 +1,78 @@
+
+
+nav{
+
+    width: 275px;
+    position: absolute;
+    transition: .5s;
+    background: white;
+    box-shadow: 0 -10px 50px #b1b1b180;
+    overflow-y: auto;
+    height: 100%;
+    border-top: 1px solid #d8dde0;
+    button{
+        font-size: .875rem;
+        appearance: none;
+        border: none;
+        background: none;
+        padding-inline-start: 10px;
+        padding-inline-end: 0;
+        cursor: pointer;
+    }
+    .main-menu{
+        margin-bottom: 1rem;
+    margin-inline-end: 40px;
+    }
+    .menu{
+        padding-inline-end: 20px;
+        padding-inline-start: 20px;
+        list-style-type: none;
+
+    }
+    .close{
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 999;
+        padding: 0 6px;
+        margin-inline-start: 10px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 0rem;
+        left: 1rem;
+        color:  #575757;
+    }
+    .links{
+        border-top: solid 1px #d8dde0;
+        padding-inline-start: 0;
+        padding-top: 7px;
+        margin-top: 7px;
+        
+    }
+    ul{
+        padding-inline-start: 20px;
+        list-style-type: none;
+    }
+    .menu-title-text{
+        padding-inline-start: 7px;
+        z-index: 1;
+        font-family: 'Rubik', sans-serif;
+        direction: rtl;
+        font-size: 1rem;;
+        font-weight: 700;
+    }
+    .menu-item{
+        height: 2rem;
+        padding: 1rem;
+
+    }
+}
+@media screen and (max-width: 500px) {
+    nav {
+       width: 100vw;
+    }
+}

@@ -1,0 +1,152 @@
+app-side-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999999;
+    &.open {
+        display: block;
+        inset-inline-start: 0;
+        animation-name: backgroundFadeIn;
+        animation-duration: .25s;
+        background-color: #00000080;
+        z-index: 999999999;
+    }
+        
+}
+
+
+.header-container {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-inline: 10px 29px;
+    padding-block: 14px 13px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .menu {
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 999;
+        padding: 0 6px;
+    }
+
+    img {
+        width: 7rem;
+        height: 5rem;
+        padding-right: 32px;
+    }
+
+}
+
+.title-container {
+    h1 {
+        font-size: 1.5rem;
+        white-space: nowrap;
+        text-decoration: none;
+        vertical-align: middle;
+        font-weight: 700;
+
+    }
+
+    line-height: 1;
+    margin: 0 22px 0 30px;
+    flex: auto 1 1;
+    padding: 5px 1px;
+}
+
+.left-container {
+    display: flex;
+    align-items: center;
+
+    .sub-title {
+        padding-top: 10px;
+        padding-inline-end: 29px;
+        font-size: .875rem;
+        font-weight: 700;
+        color: #5f7280;
+    }
+
+    span {
+        margin: 0.1rem;
+
+    }
+}
+
+.icon-container {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .lang-container {}
+
+    .darkMode-container {
+        button {
+            border: none;
+            width: fit-content;
+            height: fit-content;
+            background-color: white;
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 790px) {
+    .logo-container {
+        flex: 0 0 150px;
+        flex-basis: 100%;
+    }
+
+    .header-container {
+        align-items: center;
+        padding-block: 14px 6px;
+    }
+
+    .left-container {
+        padding-inline-end: 10px;
+    }
+
+    .icon-container {
+        position: absolute;
+        top: 16px;
+        inset-inline-end: 10px;
+    }
+
+    .title-container {
+        padding: 5px 0px;
+        margin: 0;
+
+    }
+}
+
+@media screen and (max-width: 603px) {
+
+    .title-container {
+
+        height: 1.5rem;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-container{
+     .title{
+        font-size: 1.2rem;
+    }
+}
+}
